@@ -1,0 +1,8 @@
+<div class="flex-contaoner">
+    <div class="card" *ngFor="let item of news">
+        <img src="{{item?.urlToImage}}" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>{{item?.title  | uppercase | slice:0:10}}</b></h4>
+        </div>
+    </div>
+</div>
